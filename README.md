@@ -1,28 +1,45 @@
-== README
+# 22 -- Two Do MVC
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Description
 
-Things you may want to cover:
+Both because it's the second bite at the apple, and because you'll be better off doing it in pairs.
 
-* Ruby version
+We're (ok, you're) going to build the [TodoMVC project](http://todomvc.com/) in Rails. To see the app in action, click on any of the links under the "Examples" tab.
 
-* System dependencies
+The functionality should follow the [spec](https://github.com/tastejs/todomvc/blob/master/app-spec.md#functionality), with the following exceptions:
+* _Persistence_ - SQLite
+* _Routing_ in Rails
 
-* Configuration
+You can make use of the HTML in their [template](https://github.com/tastejs/todomvc-app-template/blob/master/index.html) and the CSS in the [template for that](https://github.com/tastejs/todomvc-app-css/blob/master/index.css). Use Rails helper methods wherever possible (in the form, for example).
 
-* Database creation
+Remove some lines from the HTML template. Towards the bottom are two lines that start
+```
+<script src=
+```
+-they won't break anything other than causing lots of complaining in the log file. Likewise there's a line towards the top of the template that starts
+```
+<link rel="stylesheet" href="node_modules/
+```
+which won't break anything other than causing lots of complaints in the log file.
 
-* Database initialization
+Start the project from the templates. Don't reuse what you built last weekend. Recreate your thought process.
 
-* How to run the test suite
+This project will have multiple levels of difficulty. 
 
-* Services (job queues, cache servers, search engines, etc.)
+* Level 1: Complete the functionality described above.
+* Level 2: Add due dates to the tasks. Display tasks differently depending on whether they are overdue, due today, or due in the future. 
+* Level 3: Add support for multiple users. Each user should be able to view and edit only his/her own task list.
+* Level 4: Add support for multiple task lists for each user. Each list should get its own label, and the user should be able to navigate between all of his/her own lists.
 
-* Deployment instructions
+## Objectives
 
-* ...
+### Learning Objectives
 
+You will learn how to translate specifications expressed in writing and in a functional app into your own functional app written in Rails, and how to extend an app to do more.
 
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
+### Deliverables
+
+* A functional todo list application, in its own repository 
+ 
+
+#### Tasks
