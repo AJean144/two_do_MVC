@@ -1,0 +1,14 @@
+
+	<li class="item" id="item<%= stuff.id %>"<%= 'class=completed' if stuff.complete? %>>
+		<div class="view">
+			<%= form_for stuff do |f| %>
+				<%= f.check_box :complete, class: 'toggle' %>
+			<% end %>
+			<!-- <input class="toggle" type="checkbox" checked> -->
+			<label><%= stuff.info %></label>
+			<%= button_tag('', method: :delete, type: 'delete', class: 'destroy', remote: true,
+			data: {todo_items: stuff.id}) %>
+			<!-- <button class="destroy"></button> -->
+		</div>
+		<!-- <input class="edit" value="Create a TodoMVC template"> -->
+	</li>
